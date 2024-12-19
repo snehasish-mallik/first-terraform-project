@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "example" {
   bucket = "example-bucket-0081"
 }
 
-# adding versioning to s3
+# adding versioning to s3 test
 resource "aws_s3_bucket_versioning" "versioning_example" {
   bucket = aws_s3_bucket.example.id
   versioning_configuration {
